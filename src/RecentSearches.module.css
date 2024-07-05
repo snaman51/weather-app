@@ -1,0 +1,21 @@
+.recentSearches {
+    margin-top: 20px;
+  }
+  
+  .searchList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .searchItem {
+    background-color: #e0e0e0;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .searchItem:hover {
+    background-color: #d0d0d0;
+  }
