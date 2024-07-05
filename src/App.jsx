@@ -60,9 +60,19 @@ const App = () => {
           Search
         </button>
       </div>
-      <button onClick={toggleUnit} className={styles.unitToggle}>
-        Switch to {isCelsius ? "Fahrenheit" : "Celsius"}
-      </button>
+
+      <div className={styles.unitToggle}>
+        <span>°C</span>
+        <label className={styles.switch}>
+          <input
+            type="checkbox"
+            checked={!isCelsius}
+            onChange={toggleUnit}
+          />
+          <span className={[styles.slider,styles.round].join(" ")}></span>
+        </label>
+        <span>°F</span>
+      </div>
       
       {isLoading && <div className={styles.loader}>Loading...</div>}
       {error && <div className={styles.error}>{error}</div>}
